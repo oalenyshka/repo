@@ -17,7 +17,7 @@ $(function() {
 $(window).scroll(function() {
     if(window.scrollY>100){
         $('.header').addClass('header_scroll');
-        $('.header_logo img').attr('src','../images/lotus-yoga-scroll.svg');
+        $('.header_logo img').attr('src','images/lotus-yoga-scroll.svg');
         $('.header_nav').css('color','#000');
         $('.header_tasks').css('color','#000');
         $('.header_tasks').css('border','1px solid #000');
@@ -26,7 +26,7 @@ $(window).scroll(function() {
     }
     else{
         $('.header').removeClass('header_scroll');
-        $('.header_logo img').attr('src','../images/lotus-yoga-svgrepo-com 1.svg');
+        $('.header_logo img').attr('src','images/lotus-yoga-svgrepo-com 1.svg');
         $('.header_nav').css('color','#C9F2D4');
         $('.header_tasks').css('color','#C9F2D4');
         $('.header_tasks').css('border','1px solid #C9F2D4');

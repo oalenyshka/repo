@@ -1,0 +1,46 @@
+.tasks_content{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+.task_title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #C19FC2;
+    margin: 30px 0;
+}
+
+.task2{
+    margin-bottom: 20px;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+@media (max-width: 950px) {
+    .task_title{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 750px){
+    .task_title{
+        font-size: 25px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 500px){
+    .header{
+        padding: 10px 0px;
+    }
+    .tasks_content{
+        margin: 60px 0;
+    }
+    .task_title{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+}

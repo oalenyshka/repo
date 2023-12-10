@@ -1,0 +1,241 @@
+/*Обнуление свойств*/
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    vertical-align: top;
+}
+h1{
+    font-weight: inherit;
+    font-size: inherit;
+}
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    color: #000;
+    font-family: Inter;
+}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer; color: inherit; background-color: inherit;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited, a:hover, a:link{text-decoration: none;}
+a{color: inherit; background-color: transparent;}
+ul li {list-style: none;}
+img{border-style: none;}
+h1{font-size: inherit; font-weight: inherit;}
+button,select {text-transform: none;}
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {border-style: none; padding: 0;}
+
+
+/*------------------------------------------------------------*/
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none !important;
+}
+
+:root{
+    --violet:rgb(164, 164, 255);
+    --dark_violet:rgb(121, 121, 250);
+    --grey:rgb(150, 150, 150);
+    --mint:rgb(192, 255, 232);
+    --dark_mint:rgb(77, 202, 179);
+    --white:#fff;
+    --black:#000;
+}
+/*------------------------------------------------------------*/
+
+
+.container {
+    background: linear-gradient(100deg, #402, #006);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 55'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23fff' stroke-width='7' opacity='.1'%3E%3Cpath d='M-345 34.5s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 48.3 0 48.3s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3Cpath d='M-345 20.7s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 34.5 0 34.5s115-13.8 115-13.8S172.5 6.9 230 6.9s115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8m-920 27.6s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 62.1 0 62.1s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3Cpath d='M-345 6.9s57.5-13.8 115-13.8S-115 6.9-115 6.9-57.5 20.7 0 20.7 115 6.9 115 6.9 172.5-6.9 230-6.9 345 6.9 345 6.9s57.5 13.8 115 13.8S575 6.9 575 6.9'/%3E%3Cpath d='M-345-6.9s57.5-13.8 115-13.8S-115-6.9-115-6.9-57.5 6.9 0 6.9 115-6.9 115-6.9s57.5-13.8 115-13.8S345-6.9 345-6.9 402.5 6.9 460 6.9 575-6.9 575-6.9m-920 69s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 75.9 0 75.9s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3C/g%3E%3C/svg%3E%0A"), linear-gradient(80deg, rgb(200, 252, 245), rgb(164, 164, 255));
+    background-position: 50% 50%;
+    animation: background-move 10s linear infinite;
+    background-size: 100vw auto, 100% 100%;
+}
+
+
+@keyframes background-move {
+  0% { background-position: 0 0, 0 0; }
+  100% { 
+    background-position: 100vw 0, 0 0;
+  }
+}
+
+
+.bg_wrap{
+    width: 100%;
+    height: 100vh;
+}
+
+.authorization{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_heading{
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    text-shadow: 3px 2px 6px grey;
+}
+
+.username{
+    margin: 10px 0 30px;
+    box-shadow: inset 1px 1px 3px -1px rgba(0, 0, 0, 0.6);
+    width: 60%;
+    height: 40px;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.username::placeholder{
+    color: var(--grey);
+    font-size: 18px;
+    text-align: center;
+}
+
+.username:focus{
+    outline: var(--violet);
+}
+
+.btn_start, .btn_next{
+    font-size: 25px;
+    font-weight: bold;
+    width: 50%;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn_start:hover {
+  box-shadow: inset 9em 0 0 0 var(--violet);
+  border: var(--violet);
+}
+
+.base{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background: var(--white);
+    border-radius: 50px;
+    border: 2px solid var(--violet);
+    box-shadow:0 0 20px var(--violet);  
+    padding: 40px 30px;
+    color: var(--black);
+}
+
+.heading{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--violet);
+}
+
+.rules_text{
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn_next{
+    border: 1px solid transparent;
+    color: var(--grey);
+    width: 28%;
+    font-size: 20px;
+}
+
+.btn_next:hover {
+    box-shadow: inset 10em 0 0 0 var(--violet);
+    border: var(--violet);
+    color: var(--white);
+}
+
+.levels{
+    gap: 40px;
+}
+
+#curr_name{
+    color: var(--dark_violet);
+}
+
+.levels h1{
+    color: var(--black);
+    margin: 0;
+}
+
+.level{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    width: 40%;
+    height: 50px;
+    line-height: 45px;
+    border: 2px solid var(--dark_violet);
+    color: var(--dark_violet);
+    border-radius: 40px;
+    background-color: transparent;
+    transition: all .6s;
+}
+
+.level:hover{
+    box-shadow: inset 16em 0 0 0 var(--dark_violet);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.level.disabled{
+    pointer-events: none;
+    border: 2px solid var(--grey);
+    color: var(--grey);
+}
+
+.rating{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    width: 40%;
+    height: 50px;
+    line-height: 45px;
+    border: 2px solid var(--dark_mint);
+    color: var(--dark_mint);
+    border-radius: 40px;
+    background-color: transparent;
+    transition: all .6s;
+}
+
+.rating:hover{
+    box-shadow: inset 16em 0 0 0 var(--dark_mint);
+    color: var(--white);
+    cursor: pointer;
+}

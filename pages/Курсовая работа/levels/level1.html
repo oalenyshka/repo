@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/level1.css">
+
+    <title>WaterSort</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="level_one">
+                <div class="time_score">
+                    <div class="timer" id="timer">Таймер: <span id="userTime"></span></div>
+                    <div class="score" id="score">Ваш счет: <span id="userScore"></span></div>
+                </div>
+                <div class="add_bottle">Добавить сосуд</div>
+                <dialog id="dlgLoss" class="hidden">
+                    <h1 class="heading">Время вышло!</h1>
+                    <button id="btn_loss">Попробовать еще раз</button>
+                    <button id="btn_back_menu">Вернуться в меню</button>
+                </dialog>
+                <dialog id="dlgNextLevel" class="hidden">
+                    <h1 class="heading">Так держать! <span id="curr_name"></span>, ты перешел на новый уровень сложности!</h1>
+                </dialog>
+                <div class="game_field">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../code/level1.js"></script>
+    <script src="../code/timer.js"></script>
+</body>
+</html>

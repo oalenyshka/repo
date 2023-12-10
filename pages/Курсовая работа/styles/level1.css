@@ -1,0 +1,147 @@
+@import 'style.css';
+
+.time_score{
+    display: flex;
+    margin: 15px auto 0;
+    justify-content: center;
+}
+
+#score{
+    cursor: default;
+    color: var(--dark_violet);
+    background-color: var(--white);
+    border: 2px solid #fff;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.timer{
+    font-size: 20px;
+    cursor:default;
+    color: var(--dark_violet);
+    background-color: var(--white);
+    border: 2px solid #fff;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+#dlgLoss{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    background: var(--white);
+    border-radius: 50px;
+    border: 2px solid var(--mint);
+    box-shadow:0 0 20px var(--mint);  
+    padding: 40px 30px;
+    color: var(--black);
+}
+
+#dlgLoss h1{
+    color: var(--dark_mint);
+}
+
+#btn_loss, #btn_back_menu{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    height: 50px;
+    line-height: 45px;
+    border: 2px solid var(--dark_mint);
+    color: var(--dark_mint);
+    border-radius: 40px;
+    background-color: transparent;
+    transition: all .6s;
+}
+
+#btn_loss:hover, #btn_back_menu:hover{
+    box-shadow: inset 16em 0 0 0 var(--dark_mint);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.game_field{
+    background-color: white;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 70px 120px;
+    border-radius: 60px;
+    flex-wrap: wrap;
+}
+
+.noshow{
+    opacity: 0.1 !important;
+}
+
+.bottle{
+    cursor: grab;
+    position: relative;
+    border: 2px solid black;
+    background-color: white;
+    height: 314px;
+    width: 53px;
+    border-radius: 0 0 25px 25px;
+    padding-top: 10px;
+    transition: top .3s;
+    opacity: 1;
+}
+
+.bottle.disabled{
+    pointer-events: none;
+}
+
+.selected{
+    top: -30px;
+}
+
+.bottleform {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0px -4px 7px 1px #dadada75;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.liquid-block {
+    width: 50px;
+}
+
+.add_bottle{
+    margin: 20px auto 0;
+    cursor: pointer;
+    line-height: 16px;
+    padding: 10px;
+    font-weight: bold;
+    width: fit-content;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.add_bottle.disabled{
+    pointer-events: none;
+    border: 2px solid rgb(188, 188, 188);
+    color:rgb(188, 188, 188);
+}
+
+.add_bottle:hover{
+    background-color: var(--violet);
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Выберите уровень - WaterSort</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            
+            <div class="levels base" name="levels">
+                <h1 class="heading"><span id="curr_name"></span>, выберите уровень сложности:</h1>
+                <label for="useTimer" title="Если вы будете играть с таймером, при серии выигрышей вы сможете перейти на новый уровень сложности">Играть с таймером? 
+                    <input type="checkbox" name="useTimer" id="useTimer" title="Если вы будете играть с таймером, при серии выигрышей вы сможете перейти на новый уровень сложности">
+                </label>
+                <div class="level" id="1">Легкий</div>
+                <div class="level disabled" id="2">Средний</div>
+                <div class="level disabled" id="3">Сложный</div>
+                <div class="rating">Рейтинг</div>
+            </div>
+
+        </div>
+    </main>
+    <script src="../code/menu_levels.js"></script>
+</body>
+</html>

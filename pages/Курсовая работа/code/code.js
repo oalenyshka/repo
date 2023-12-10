@@ -27,7 +27,6 @@ function startGame(){
         let my_user = {name:`${username}`, score: 0};
         if(localStorage.getItem('rating')==undefined){
             localStorage.setItem('rating', JSON.stringify([my_user]));
-            alert('123');
         }
         else{
             let x = JSON.parse(localStorage.getItem('rating'));

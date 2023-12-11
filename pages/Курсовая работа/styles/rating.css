@@ -6,14 +6,15 @@
     color: var(--dark_violet);
 }
 
-.cont_rating{
-    flex-direction: column;
+.all_rating{
+    padding-top: 0;
 }
 
 .arrow{
     cursor: pointer;
-    position: fixed;
-    top: 100px;
+    position: relative;
+    top: 30px;
+    left: -280px;
     transition: all .3s;
 }
 

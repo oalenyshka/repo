@@ -238,7 +238,7 @@ function gameWin(){
             else{
                 sessionStorage['count_wins']=count_win;
                 setTimeout(() => {
-                    alert('Win!'+count_win);
+                    alert('Вы выиграли! Количество побед: '+count_win);
                 }, 100);
             }
         }

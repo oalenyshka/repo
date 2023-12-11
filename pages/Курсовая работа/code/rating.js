@@ -13,3 +13,7 @@ function createRating(){
         place++;
     });
 }
+
+document.querySelector('.arrow').addEventListener('click', ()=>{
+    window.location.href = '../levels/menu_levels.html';
+})

@@ -5,3 +5,18 @@
 .place{
     color: var(--dark_violet);
 }
+
+.cont_rating{
+    flex-direction: column;
+}
+
+.arrow{
+    cursor: pointer;
+    position: fixed;
+    top: 100px;
+    transition: all .3s;
+}
+
+.arrow:hover{
+    scale: .9;
+}

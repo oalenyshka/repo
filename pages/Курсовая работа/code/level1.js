@@ -16,6 +16,10 @@ colors.forEach(c => {
 let isDragging = false;
 let draggedBottle = null;
 
+document.querySelector('.arrow').addEventListener('click', ()=>{
+    window.location.href = '../levels/menu_levels.html';
+})
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const lev = sessionStorage.getItem('level');

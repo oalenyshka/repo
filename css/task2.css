@@ -20,7 +20,7 @@
 }
 
 #logo:active{
-   background-image: url('/Сайт/images/task2/27943604_6697603.svg');
+   background-image: url('../images/task2/27943604_6697603.svg');
    background-size: cover;
    background-position: top; 
    animation: scale 2s infinite 1.5s;

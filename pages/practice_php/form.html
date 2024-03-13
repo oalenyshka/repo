@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular,700&display=swap;" rel="stylesheet" />
+    <link rel="icon" href="/images/lotus-yoga-svgrepo-com 1 (1).png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tasks.css">
+    <link rel="stylesheet" href="/css/mobile_nav.css">
+    <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Задания</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="_container">
+                <div class="header_row">
+                    <a href="/index.html" title="NAMASTE - погрузись в мир йоги" class="header_logo"><span class="header_logo_text"">NAMASTE</span></a>
+                    <nav class="header_nav">
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="/index.html#about" class="nav_link">Что это такое?</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="/index.html#types" class="nav_link">Виды йоги</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="/index.html#asans" class="nav_link">Асаны</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="/index.html#practice" class="nav_link">Практики</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="/pages/tasks.html" class="header_tasks">Задания</a>
+                    <button type="button" class="mobile_nav_button">
+						<span class="mobile_nav_button_icon"></span>
+					</button>
+                </div>
+            </div>
+        </header>
+        <div class="mobile_nav_wrapper _container">
+            <nav class="mobile_nav">
+                <ul class="m_nav_list">
+                    <li class="m_nav_item">
+                        <a href="/index.html#about" class="m_nav_link">Что это такое?</a>
+                    </li>
+                    <li class="m_nav_item">
+                        <a href="/index.html#types" class="m_nav_link">Виды йоги</a>
+                    </li>
+                    <li class="m_nav_item">
+                        <a href="/index.html#asans" class="m_nav_link">Асаны</a>
+                    </li>
+                    <li class="m_nav_item">
+                        <a href="/index.html#practice" class="m_nav_link">Практики</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="/pages/tasks.html" class="m_tasks">Задания</a>
+        </div>
+        <main>
+            <div class="_container">
+                <div class="tasks_content">
+                    <h1 class="title_form">Заказ мебели</h1>
+                    <form action="order.php" method="post">
+                        <label for="lastname">Фамилия <input class="field" type="text" name="lastname" id=""></label>
+                        <label for="city">Город доставки   
+                            <select class="field" name="city" id="">
+                                <option value="">-- Выберите город --</option>
+                                <option value="petersburg">Санкт-Петербург</option>
+                                <option value="moscow">Москва</option>
+                                <option value="kaliningrad">Калининград</option>
+                            </select>
+                        </label>
+                        <label for="order_date">Дата доставки <input class="field" type="text" name="order_date" id=""></label>
+                        <label for="address">Адрес <input class="field" type="text" name="address" id=""></label>
+                        <div class="block">
+                            <div class="radio-set set">
+                                <label class="header_set" for="color">Выберите цвет мебели</label>
+                                <span class="one_of_set"><input type="radio" name="color" id=""> Ореховый</span>
+                                <span class="one_of_set"><input type="radio" name="color" id=""> Дуб мореный</span>
+                                <span class="one_of_set"><input type="radio" name="color" id=""> Палисандр</span>
+                                <span class="one_of_set"><input type="radio" name="color" id=""> Эбеновое дерево</span>
+                                <span class="one_of_set"><input type="radio" name="color" id=""> Клен</span>
+                                <span class="one_of_set"><input type="radio" name="color" id=""> Лиственница</span>
+                            </div>
+                            <div class="check-set set">
+                                <label class="header_set" for="items">Выберите предметы мебели</label>
+                                <span class="one_of_set"><input type="checkbox" name="items" id=""> Банкетка</span>
+                                <span class="one_of_set"><input type="checkbox" name="items" id=""> Кровать</span>
+                                <span class="one_of_set"><input type="checkbox" name="items" id=""> Комод</span>
+                                <span class="one_of_set"><input type="checkbox" name="items" id=""> Шкаф</span>
+                                <span class="one_of_set"><input type="checkbox" name="items" id=""> Стул</span>
+                                <span class="one_of_set"><input type="checkbox" name="items" id=""> Стол</span>
+                            </div>
+                            <div class="set">
+                                <label class="header_set" for="amount">Количество</label>
+                                <input class="amount field" type="text" name="amount" id="">
+                                <input class="amount field" type="text" name="amount" id="">
+                                <input class="amount field" type="text" name="amount" id="">
+                                <input class="amount field" type="text" name="amount" id="">
+                                <input class="amount field" type="text" name="amount" id="">
+                                <input class="amount field" type="text" name="amount" id="">
+                            </div>
+                        </div>
+                        <input class="btn_file" type="file" name="" id="">
+                        <input name="btn_submit" class="btn_submit" type="submit" value="Оформить заказ">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="../index.html"><img class="footer_logo" src="/images/Лого с текстом.svg" alt=""></a>
+        </footer>
+
+    </div>
+</body>
+</html>
